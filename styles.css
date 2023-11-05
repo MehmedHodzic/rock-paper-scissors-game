@@ -1,0 +1,56 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.animated-button {
+    animation: bounce 2s infinite;
+    margin: 10px; /* Dodajte razmak između gumbova */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#rock {
+    background-color: #FF5733; 
+    width: 100px; /* Postavite željenu širinu */
+    height: 100px;
+}
+
+
+#paper {
+    background-color: purple;
+    width: 100px; /* Postavite željenu širinu */
+    height: 100px; 
+}
+
+
+#scissors {
+    background-color: #27AE60; 
+    width: 100px; /* Postavite željenu širinu */
+    height: 100px;
+}
+
+#result-text{
+    font-size: 24px;
+    color: black;
+}
+
+p{
+    font-size: 24px;
+    color: black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igra "Kamen, papir, škare"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container bg-primary text-light" style="height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+        <div>
+            <div class="choices d-flex justify-content-center mt-4">
+                <button id="rock" class="btn btn-success btn-lg animated-button" onclick="playGame('rock')"><i class="fas fa-hand-rock"></i></button>
+                <button id="paper" class="btn btn-success btn-lg animated-button" onclick="playGame('paper')"><i class="fas fa-hand-paper"></i></button>
+                <button id="scissors" class="btn btn-success btn-lg animated-button" onclick="playGame('scissors')"><i class="fas fa-hand-scissors"></i></button>
+            </div>
+            <div id="result" class="hidden mt-4 text-center">
+                <p>Rezultat: <span id="result-text"></span></p>
+                <p>Računalo odabire: <span id="computer-icon"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
